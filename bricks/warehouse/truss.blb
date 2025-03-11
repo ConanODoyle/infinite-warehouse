@@ -1,0 +1,800 @@
+64 2 30
+SPECIAL
+
+bbbbbbbbbbbbbbbbbbbbbbbbbbbbbb----bbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+bbbbbbbbbbbbbbbbbbbbbbbbbbbbbb----bbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+bbbbbbbbbbbbbbbbbbbbbbbbbbbbbb----bbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+bbbbbbbbbbbbbbbbbbbbbbbbbbbbbb----bbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+bbbbbbbbbbbbbbbbbbbbbbbbbbbbbb----bbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+bbbbbbbbbbbbbbbbbbbbbbbbbbbbbb----bbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+bbbbbbbbbbbbbbbbbbbbbbbbbbbbbb----bbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+bbbbbbbbbbbbbbbbbbbbbbbbbbbbbb----bbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+bbbbbbbbbbbbbbbbbbbbbbbbbbbbbb----bbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+bbbbbbbbbbbbbbbbbbbbbbbbbbbbbb----bbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+bbbbbbbbbbbbbbbbbbbbbbbbbbbbbb----bbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+bbbbbbbbbbbbbbbbbbbbbbbbbbbbbb----bbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+bbbbbbbbbbbbbbbbbbbbbbbbbbbbbb----bbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+bbbbbbbbbbbbbbbbbbbbbbbbbbbbbb----bbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+bbbbbbbbbbbbbbbbbbbbbbbbbbbbbb----bbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+bbbbbbbbbbbbbbbbbbbbbbbbbbbbbb----bbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+bbbbbbbbbbbbbbbbbbbbbbbbbbbbbb----bbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+bbbbbbbbbbbbbbbbbbbbbbbbbbbbbb----bbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+bbbbbbbbbbbbbbbbbbbbbbbbbbbbbb----bbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+bbbbbbbbbbbbbbbbbbbbbbbbbbbbbb----bbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+bbbbbbbbbbbbbbbbbbbbbbbbbbbbbb----bbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+bbbbbbbbbbbbbbbbbbbbbbbbbbbbbb----bbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+bbbbbbbbbbbbbbbbbbbbbbbbbbbbbb----bbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+bbbbbbbbbbbbbbbbbbbbbbbbbbbbbb----bbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+bbbbbbbbbbbbbbbbbbbbbbbbbbbbbb----bbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+bbbbbbbbbbbbbbbbbbbbbbbbbbbbbb----bbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+bbbbbbbbbbbbbbbbbbbbbbbbbbbbbb----bbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+bbbbbbbbbbbbbbbbbbbbbbbbbbbbbb----bbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+bbbbbbbbbbbbbbbbbbbbbbbbbbbbbb----bbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+bbbbbbbbbbbbbbbbbbbbbbbbbbbbbb----bbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+
+bbbbbbbbbbbbbbbbbbbbbbbbbbbbbb----bbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+bbbbbbbbbbbbbbbbbbbbbbbbbbbbbb----bbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+bbbbbbbbbbbbbbbbbbbbbbbbbbbbbb----bbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+bbbbbbbbbbbbbbbbbbbbbbbbbbbbbb----bbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+bbbbbbbbbbbbbbbbbbbbbbbbbbbbbb----bbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+bbbbbbbbbbbbbbbbbbbbbbbbbbbbbb----bbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+bbbbbbbbbbbbbbbbbbbbbbbbbbbbbb----bbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+bbbbbbbbbbbbbbbbbbbbbbbbbbbbbb----bbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+bbbbbbbbbbbbbbbbbbbbbbbbbbbbbb----bbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+bbbbbbbbbbbbbbbbbbbbbbbbbbbbbb----bbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+bbbbbbbbbbbbbbbbbbbbbbbbbbbbbb----bbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+bbbbbbbbbbbbbbbbbbbbbbbbbbbbbb----bbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+bbbbbbbbbbbbbbbbbbbbbbbbbbbbbb----bbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+bbbbbbbbbbbbbbbbbbbbbbbbbbbbbb----bbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+bbbbbbbbbbbbbbbbbbbbbbbbbbbbbb----bbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+bbbbbbbbbbbbbbbbbbbbbbbbbbbbbb----bbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+bbbbbbbbbbbbbbbbbbbbbbbbbbbbbb----bbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+bbbbbbbbbbbbbbbbbbbbbbbbbbbbbb----bbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+bbbbbbbbbbbbbbbbbbbbbbbbbbbbbb----bbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+bbbbbbbbbbbbbbbbbbbbbbbbbbbbbb----bbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+bbbbbbbbbbbbbbbbbbbbbbbbbbbbbb----bbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+bbbbbbbbbbbbbbbbbbbbbbbbbbbbbb----bbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+bbbbbbbbbbbbbbbbbbbbbbbbbbbbbb----bbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+bbbbbbbbbbbbbbbbbbbbbbbbbbbbbb----bbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+bbbbbbbbbbbbbbbbbbbbbbbbbbbbbb----bbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+bbbbbbbbbbbbbbbbbbbbbbbbbbbbbb----bbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+bbbbbbbbbbbbbbbbbbbbbbbbbbbbbb----bbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+bbbbbbbbbbbbbbbbbbbbbbbbbbbbbb----bbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+bbbbbbbbbbbbbbbbbbbbbbbbbbbbbb----bbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+bbbbbbbbbbbbbbbbbbbbbbbbbbbbbb----bbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+
+2
+
+0 0 13.5
+64 2 3
+
+0 0 -13.5
+64 2 3
+COVERAGE:
+0 : 99999
+0 : 99999
+0 : 99999
+0 : 99999
+0 : 99999
+0 : 99999
+---------------- TOP QUADS ----------------
+1
+
+TEX:SIDE
+POSITION:
+32 1 15
+31.99999 -1 15
+-32 -1.00001 15
+-31.99999 0.99999 15
+UV COORDS:
+0.5 0.5
+0.5 0.5
+0.5 0.5
+0.5 0.5
+NORMALS:
+0 0 1
+0 0 1
+0 0 1
+0 0 1
+---------------- BOTTOM QUADS ----------------
+2
+
+TEX:SIDE
+POSITION:
+32 -0.25 -15
+-32 -0.25001 -15
+-32 -1.00001 -15
+32 -1 -15
+UV COORDS:
+0.5 0.5
+0.5 0.5
+0.5 0.5
+0.5 0.5
+COLORS:
+-0.05 -0.05 -0.05 -1
+-0.05 -0.05 -0.05 -1
+-0.05 -0.05 -0.05 -1
+-0.05 -0.05 -0.05 -1
+NORMALS:
+0 0 -1
+0 0 -1
+0 0 -1
+0 0 -1
+
+TEX:SIDE
+POSITION:
+-32 0.24999 -15
+32 0.25 -15
+32 1 -15
+-32 0.99999 -15
+UV COORDS:
+0.5 0.5
+0.5 0.5
+0.5 0.5
+0.5 0.5
+COLORS:
+-0.05 -0.05 -0.05 -1
+-0.05 -0.05 -0.05 -1
+-0.05 -0.05 -0.05 -1
+-0.05 -0.05 -0.05 -1
+NORMALS:
+0 0 -1
+0 0 -1
+0 0 -1
+0 0 -1
+---------------- NORTH QUADS ----------------
+0
+---------------- EAST QUADS ----------------
+0
+---------------- SOUTH QUADS ----------------
+0
+---------------- WEST QUADS ----------------
+0
+---------------- OMNI QUADS ----------------
+33
+
+TEX:SIDE
+POSITION:
+-32 -1.00001 12
+32 -1 12
+32 1 12
+-32 0.99999 12
+UV COORDS:
+0.5 0.5
+0.5 0.5
+0.5 0.5
+0.5 0.5
+COLORS:
+-0.1 -0.1 -0.1 -1
+-0.1 -0.1 -0.1 -1
+-0.1 -0.1 -0.1 -1
+-0.1 -0.1 -0.1 -1
+NORMALS:
+0 0 -1
+0 0 -1
+0 0 -1
+0 0 -1
+
+TEX:SIDE
+POSITION:
+32 -1 12
+-32 -1.00001 12
+-32 -1.00001 15
+31.99999 -1 15
+UV COORDS:
+0.5 0.5
+0.5 0.5
+0.5 0.5
+0.5 0.5
+NORMALS:
+0 -1 -0
+0 -1 -0
+0 -1 -0
+0 -1 -0
+
+TEX:SIDE
+POSITION:
+-32 -0.25001 -14.5
+32 -0.25 -14.5
+32 0.25 -14.5
+-32 0.24999 -14.5
+UV COORDS:
+0.5 0.5
+0.5 0.5
+0.5 0.5
+0.5 0.5
+COLORS:
+-0.05 -0.05 -0.05 -1
+-0.05 -0.05 -0.05 -1
+-0.05 -0.05 -0.05 -1
+-0.05 -0.05 -0.05 -1
+NORMALS:
+0 0 -1
+0 0 -1
+0 0 -1
+0 0 -1
+
+TEX:SIDE
+POSITION:
+32 1 -12
+31.99999 -1 -12
+-32 -1.00001 -12
+-31.99999 0.99999 -12
+UV COORDS:
+0.5 0.5
+0.5 0.5
+0.5 0.5
+0.5 0.5
+COLORS:
+-0.1 -0.1 -0.1 -1
+-0.1 -0.1 -0.1 -1
+-0.1 -0.1 -0.1 -1
+-0.1 -0.1 -0.1 -1
+NORMALS:
+0 0 1
+0 0 1
+0 0 1
+0 0 1
+
+TEX:SIDE
+POSITION:
+12 0.70001 12
+4 0.69999 -12
+4 -0.70001 -12
+12 -0.69999 12
+UV COORDS:
+0.5 0.5
+0.5 0.5
+0.5 0.5
+0.5 0.5
+COLORS:
+-0.1 -0.1 -0.1 -1
+-0.1 -0.1 -0.1 -1
+-0.1 -0.1 -0.1 -1
+-0.1 -0.1 -0.1 -1
+NORMALS:
+0.76822 0 -0.64018
+0.76822 0 -0.64018
+0.76822 0 -0.64018
+0.76822 0 -0.64018
+
+TEX:SIDE
+POSITION:
+2 -0.70001 -12
+2 0.69999 -12
+10 0.7 12
+10 -0.7 12
+UV COORDS:
+0.5 0.5
+0.5 0.5
+0.5 0.5
+0.5 0.5
+COLORS:
+-0.1 -0.1 -0.1 -1
+-0.1 -0.1 -0.1 -1
+-0.1 -0.1 -0.1 -1
+-0.1 -0.1 -0.1 -1
+NORMALS:
+-0.76822 0 0.64018
+-0.76822 0 0.64018
+-0.76822 0 0.64018
+-0.76822 0 0.64018
+
+TEX:SIDE
+POSITION:
+4 -0.70001 -12
+2 -0.70001 -12
+10 -0.7 12
+12 -0.69999 12
+UV COORDS:
+0.5 0.5
+0.5 0.5
+0.5 0.5
+0.5 0.5
+NORMALS:
+0 -1 -0
+0 -1 -0
+0 -1 -0
+0 -1 -0
+
+TEX:SIDE
+POSITION:
+12 0.70001 12
+10 0.7 12
+2 0.69999 -12
+4 0.69999 -12
+UV COORDS:
+0.5 0.5
+0.5 0.5
+0.5 0.5
+0.5 0.5
+NORMALS:
+-0 1 0
+-0 1 0
+-0 1 0
+-0 1 0
+
+TEX:SIDE
+POSITION:
+12 -0.70001 12
+14 -0.7 12
+22 -0.69999 -12
+20 -0.69999 -12
+UV COORDS:
+0.5 0.5
+0.5 0.5
+0.5 0.5
+0.5 0.5
+NORMALS:
+0 -1 0
+0 -1 0
+0 -1 0
+0 -1 0
+
+TEX:SIDE
+POSITION:
+12 -0.70001 12
+20 -0.69999 -12
+20 0.70001 -12
+12 0.69999 12
+UV COORDS:
+0.5 0.5
+0.5 0.5
+0.5 0.5
+0.5 0.5
+COLORS:
+-0.1 -0.1 -0.1 -1
+-0.1 -0.1 -0.1 -1
+-0.1 -0.1 -0.1 -1
+-0.1 -0.1 -0.1 -1
+NORMALS:
+-0.76822 0 -0.64018
+-0.76822 0 -0.64018
+-0.76822 0 -0.64018
+-0.76822 0 -0.64018
+
+TEX:SIDE
+POSITION:
+20 0.70001 -12
+22 0.70001 -12
+14 0.7 12
+12 0.69999 12
+UV COORDS:
+0.5 0.5
+0.5 0.5
+0.5 0.5
+0.5 0.5
+NORMALS:
+-0 1 -0
+-0 1 -0
+-0 1 -0
+-0 1 -0
+
+TEX:SIDE
+POSITION:
+22 0.70001 -12
+22 -0.69999 -12
+14 -0.7 12
+14 0.7 12
+UV COORDS:
+0.5 0.5
+0.5 0.5
+0.5 0.5
+0.5 0.5
+COLORS:
+-0.1 -0.1 -0.1 -1
+-0.1 -0.1 -0.1 -1
+-0.1 -0.1 -0.1 -1
+-0.1 -0.1 -0.1 -1
+NORMALS:
+0.76822 0 0.64018
+0.76822 0 0.64018
+0.76822 0 0.64018
+0.76822 0 0.64018
+
+TEX:SIDE
+POSITION:
+32 0.70001 12
+24 0.69999 -12
+24 -0.70001 -12
+32 -0.69999 12
+UV COORDS:
+0.5 0.5
+0.5 0.5
+0.5 0.5
+0.5 0.5
+COLORS:
+-0.1 -0.1 -0.1 -1
+-0.1 -0.1 -0.1 -1
+-0.1 -0.1 -0.1 -1
+-0.1 -0.1 -0.1 -1
+NORMALS:
+0.76822 0 -0.64018
+0.76822 0 -0.64018
+0.76822 0 -0.64018
+0.76822 0 -0.64018
+
+TEX:SIDE
+POSITION:
+22 -0.70001 -12
+22 0.69999 -12
+30 0.7 12
+30 -0.7 12
+UV COORDS:
+0.5 0.5
+0.5 0.5
+0.5 0.5
+0.5 0.5
+COLORS:
+-0.1 -0.1 -0.1 -1
+-0.1 -0.1 -0.1 -1
+-0.1 -0.1 -0.1 -1
+-0.1 -0.1 -0.1 -1
+NORMALS:
+-0.76822 0 0.64018
+-0.76822 0 0.64018
+-0.76822 0 0.64018
+-0.76822 0 0.64018
+
+TEX:SIDE
+POSITION:
+24 -0.70001 -12
+22 -0.70001 -12
+30 -0.7 12
+32 -0.69999 12
+UV COORDS:
+0.5 0.5
+0.5 0.5
+0.5 0.5
+0.5 0.5
+NORMALS:
+0 -1 -0
+0 -1 -0
+0 -1 -0
+0 -1 -0
+
+TEX:SIDE
+POSITION:
+32 0.70001 12
+30 0.7 12
+22 0.69999 -12
+24 0.69999 -12
+UV COORDS:
+0.5 0.5
+0.5 0.5
+0.5 0.5
+0.5 0.5
+NORMALS:
+-0 1 0
+-0 1 0
+-0 1 0
+-0 1 0
+
+TEX:SIDE
+POSITION:
+-32 0.24999 -14.5
+32 0.25 -14.5
+32 0.25 -15
+-32 0.24999 -15
+UV COORDS:
+0.5 0.5
+0.5 0.5
+0.5 0.5
+0.5 0.5
+COLORS:
+-0.1 -0.1 -0.1 -1
+-0.1 -0.1 -0.1 -1
+-0.1 -0.1 -0.1 -1
+-0.1 -0.1 -0.1 -1
+NORMALS:
+0 -1 0
+0 -1 0
+0 -1 0
+0 -1 0
+
+TEX:SIDE
+POSITION:
+-32 0.99999 12
+32 1 12
+32 1 15
+-31.99999 0.99999 15
+UV COORDS:
+0.5 0.5
+0.5 0.5
+0.5 0.5
+0.5 0.5
+NORMALS:
+-0 1 -0
+-0 1 -0
+-0 1 -0
+-0 1 -0
+
+TEX:SIDE
+POSITION:
+32 -0.25 -14.5
+-32 -0.25001 -14.5
+-32 -0.25001 -15
+32 -0.25 -15
+UV COORDS:
+0.5 0.5
+0.5 0.5
+0.5 0.5
+0.5 0.5
+COLORS:
+-0.1 -0.1 -0.1 -1
+-0.1 -0.1 -0.1 -1
+-0.1 -0.1 -0.1 -1
+-0.1 -0.1 -0.1 -1
+NORMALS:
+-0 1 0
+-0 1 0
+-0 1 0
+-0 1 0
+
+TEX:SIDE
+POSITION:
+32 1 -15
+32 1 -12
+-31.99999 0.99999 -12
+-32 0.99999 -15
+UV COORDS:
+0.5 0.5
+0.5 0.5
+0.5 0.5
+0.5 0.5
+NORMALS:
+-0 1 -0
+-0 1 -0
+-0 1 -0
+-0 1 -0
+
+TEX:SIDE
+POSITION:
+-12.00001 -0.70002 12
+-4 -0.69999 -12
+-4 0.70001 -12
+-12 0.69998 12
+UV COORDS:
+0.5 0.5
+0.5 0.5
+0.5 0.5
+0.5 0.5
+COLORS:
+-0.1 -0.1 -0.1 -1
+-0.1 -0.1 -0.1 -1
+-0.1 -0.1 -0.1 -1
+-0.1 -0.1 -0.1 -1
+NORMALS:
+-0.76822 0 -0.64018
+-0.76822 0 -0.64018
+-0.76822 0 -0.64018
+-0.76822 0 -0.64018
+
+TEX:SIDE
+POSITION:
+-2 0.70001 -12
+-2.00001 -0.69999 -12
+-10.00001 -0.7 12
+-10 0.7 12
+UV COORDS:
+0.5 0.5
+0.5 0.5
+0.5 0.5
+0.5 0.5
+COLORS:
+-0.1 -0.1 -0.1 -1
+-0.1 -0.1 -0.1 -1
+-0.1 -0.1 -0.1 -1
+-0.1 -0.1 -0.1 -1
+NORMALS:
+0.76822 0 0.64018
+0.76822 0 0.64018
+0.76822 0 0.64018
+0.76822 0 0.64018
+
+TEX:SIDE
+POSITION:
+-4 0.70001 -12
+-2 0.70001 -12
+-10 0.7 12
+-12 0.69998 12
+UV COORDS:
+0.5 0.5
+0.5 0.5
+0.5 0.5
+0.5 0.5
+NORMALS:
+-0 1 -0
+-0 1 -0
+-0 1 -0
+-0 1 -0
+
+TEX:SIDE
+POSITION:
+-12.00001 -0.70002 12
+-10.00001 -0.7 12
+-2.00001 -0.69999 -12
+-4 -0.69999 -12
+UV COORDS:
+0.5 0.5
+0.5 0.5
+0.5 0.5
+0.5 0.5
+NORMALS:
+0 -1 0
+0 -1 0
+0 -1 0
+0 -1 0
+
+TEX:SIDE
+POSITION:
+-12 0.70001 12
+-14 0.7 12
+-22 0.69999 -12
+-20 0.69999 -12
+UV COORDS:
+0.5 0.5
+0.5 0.5
+0.5 0.5
+0.5 0.5
+NORMALS:
+-0 1 0
+-0 1 0
+-0 1 0
+-0 1 0
+
+TEX:SIDE
+POSITION:
+-12 0.70001 12
+-20 0.69999 -12
+-20 -0.70001 -12
+-12 -0.69999 12
+UV COORDS:
+0.5 0.5
+0.5 0.5
+0.5 0.5
+0.5 0.5
+COLORS:
+-0.1 -0.1 -0.1 -1
+-0.1 -0.1 -0.1 -1
+-0.1 -0.1 -0.1 -1
+-0.1 -0.1 -0.1 -1
+NORMALS:
+0.76822 0 -0.64018
+0.76822 0 -0.64018
+0.76822 0 -0.64018
+0.76822 0 -0.64018
+
+TEX:SIDE
+POSITION:
+-20 -0.70001 -12
+-22.00001 -0.70001 -12
+-14.00001 -0.7 12
+-12 -0.69999 12
+UV COORDS:
+0.5 0.5
+0.5 0.5
+0.5 0.5
+0.5 0.5
+NORMALS:
+0 -1 -0
+0 -1 -0
+0 -1 -0
+0 -1 -0
+
+TEX:SIDE
+POSITION:
+-22.00001 -0.70001 -12
+-22 0.69999 -12
+-14 0.7 12
+-14.00001 -0.7 12
+UV COORDS:
+0.5 0.5
+0.5 0.5
+0.5 0.5
+0.5 0.5
+COLORS:
+-0.1 -0.1 -0.1 -1
+-0.1 -0.1 -0.1 -1
+-0.1 -0.1 -0.1 -1
+-0.1 -0.1 -0.1 -1
+NORMALS:
+-0.76822 0 0.64018
+-0.76822 0 0.64018
+-0.76822 0 0.64018
+-0.76822 0 0.64018
+
+TEX:SIDE
+POSITION:
+-32.00001 -0.70002 12
+-24 -0.7 -12
+-24 0.7 -12
+-32 0.69998 12
+UV COORDS:
+0.5 0.5
+0.5 0.5
+0.5 0.5
+0.5 0.5
+COLORS:
+-0.1 -0.1 -0.1 -1
+-0.1 -0.1 -0.1 -1
+-0.1 -0.1 -0.1 -1
+-0.1 -0.1 -0.1 -1
+NORMALS:
+-0.76822 0 -0.64018
+-0.76822 0 -0.64018
+-0.76822 0 -0.64018
+-0.76822 0 -0.64018
+
+TEX:SIDE
+POSITION:
+-22 0.7 -12
+-22.00001 -0.7 -12
+-30.00001 -0.70001 12
+-30 0.69999 12
+UV COORDS:
+0.5 0.5
+0.5 0.5
+0.5 0.5
+0.5 0.5
+COLORS:
+-0.1 -0.1 -0.1 -1
+-0.1 -0.1 -0.1 -1
+-0.1 -0.1 -0.1 -1
+-0.1 -0.1 -0.1 -1
+NORMALS:
+0.76822 0 0.64018
+0.76822 0 0.64018
+0.76822 0 0.64018
+0.76822 0 0.64018
+
+TEX:SIDE
+POSITION:
+-24 0.7 -12
+-22 0.7 -12
+-30 0.69999 12
+-32 0.69998 12
+UV COORDS:
+0.5 0.5
+0.5 0.5
+0.5 0.5
+0.5 0.5
+NORMALS:
+-0 1 -0
+-0 1 -0
+-0 1 -0
+-0 1 -0
+
+TEX:SIDE
+POSITION:
+-32.00001 -0.70002 12
+-30.00001 -0.70001 12
+-22.00001 -0.7 -12
+-24 -0.7 -12
+UV COORDS:
+0.5 0.5
+0.5 0.5
+0.5 0.5
+0.5 0.5
+NORMALS:
+0 -1 0
+0 -1 0
+0 -1 0
+0 -1 0
+
+TEX:SIDE
+POSITION:
+32 -1 -15
+-32 -1.00001 -15
+-32 -1.00001 -12
+31.99999 -1 -12
+UV COORDS:
+0.5 0.5
+0.5 0.5
+0.5 0.5
+0.5 0.5
+NORMALS:
+0 -1 -0
+0 -1 -0
+0 -1 -0
+0 -1 -0
