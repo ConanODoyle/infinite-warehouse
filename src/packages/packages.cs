@@ -59,12 +59,18 @@ function loadBoxTextures()
 {
 	echo("----Forceloading box textures/prints");
 	%dir = "Add-Ons/Server_Factory/resources/boxes/*.png";
+	$PackageTypeCount = 0;
 	%fileCount = getFileCount (%dir);
 	%filename = findFirstFile (%dir);
 	for (%i = 0; %i < %fileCount; %i++)
 	{
 		addExtraResource(%filename);
 		echo("    Registered resource " @ %filename);
+		%texName = fileBase(fileBase(%filename));
+
+		$PackageType[$PackageTypeCount++ - 1] = %texName;
+		$PackageName[%texName] = $PackageTypeCount - 1;
+		
 		// AddDamageType("boxpng" @ %i,   addTaggedString("<bitmap:" @ getSubStr(%filename, 0, strLen(%filename) - 4) @ "> %1"), '%2 %1', 1, 1);
 		%filename = findNextFile (%dir);
 	}
@@ -87,9 +93,23 @@ function pickupPackage(%obj, %player, %slot)
 {
 	messageClient(%player.client, 'MsgItemPickup', "", %slot, %obj.dataBlock.item.getID());
 	%player.tool[%slot] = %obj.dataBlock.item.getID();
-	%player.packageType[%slot] = fileBase(fileBase(getPrintTexture(%obj.getPrintID())));
+	%type = %obj.getPackageType();
+	if (%type $= "" || !isFile("Add-ons/Server_Factory/resources/boxes/" @ %type @ ".box.png"))
+	{
+		%type = "base";
+	}
+	%player.packageType[%slot] = %type;
 	serverCmdUseTool(%player.client, %slot);
 	%obj.delete();
+}
+
+function fxDTSBrick::getPackageType(%brick)
+{
+	if (%brick.dataBlock.isPackageBrick)
+	{
+		return fileBase(fileBase(getPrintTexture(%brick.getPrintID())));
+	}
+	return "";
 }
 
 
@@ -108,6 +128,9 @@ datablock ItemData(Package3x3Item : HammerItem)
 	image = "Package3x3Image";
 	className = "ItemData";
 
+	doColorshift = false;
+	colorShiftColor = "0.521569 0.384314 0.219608 1.000000";
+
 	isPackageItem = 1;
 	canDrop = 0;
 };
@@ -119,6 +142,9 @@ datablock ItemData(Package2x3Item : HammerItem)
 	uiName = "Medium Package";
 	image = "Package2x3Image";
 	className = "ItemData";
+
+	doColorshift = false;
+	colorShiftColor = "0.521569 0.384314 0.219608 1.000000";
 
 	isPackageItem = 1;
 	canDrop = 0;
@@ -132,6 +158,9 @@ datablock ItemData(Package2x2Item : HammerItem)
 	image = "Package2x2Image";
 	className = "ItemData";
 
+	doColorshift = false;
+	colorShiftColor = "0.521569 0.384314 0.219608 1.000000";
+
 	isPackageItem = 1;
 	canDrop = 0;
 };
@@ -142,6 +171,9 @@ datablock ShapeBaseImageData(BasePackageImage)
 	mountPoint = 0;
 	offset = "-0.532137 0 0.1";
 	eyeOffset = "0 2.2 -0.6";
+
+	doColorshift = false;
+	colorShiftColor = "0.521569 0.384314 0.219608 1.000000";
 
 	className = "PackageImage";
 
