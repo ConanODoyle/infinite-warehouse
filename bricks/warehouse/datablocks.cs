@@ -81,6 +81,15 @@ datablock fxDtsBrickData(brickWarehouseCeilingUnitData)
 };
 
 
+datablock fxDtsBrickData(brickWarehouseCeilingUnitShortData)
+{
+	brickFile = "./warehouse_ceiling_unit_short.blb";
+	category = "Factory";
+	subCategory = "Warehouse";
+	uiName = "warehouse_ceiling_unit_short";
+};
+
+
 
 
 
