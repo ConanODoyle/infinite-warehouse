@@ -63,6 +63,23 @@ datablock fxDtsBrickData(brickSafetyPillarData)
 	uiName = "warning_cone";
 };
 
+datablock fxDtsBrickData(brickWarehousePillarUnitData)
+{
+	brickFile = "./warehouse_pillar_unit.blb";
+	category = "Factory";
+	subCategory = "Warehouse";
+	uiName = "warehouse_pillar_unit";
+};
+
+
+datablock fxDtsBrickData(brickWarehouseCeilingUnitData)
+{
+	brickFile = "./warehouse_ceiling_unit.blb";
+	category = "Factory";
+	subCategory = "Warehouse";
+	uiName = "warehouse_ceiling_unit";
+};
+
 
 
 
