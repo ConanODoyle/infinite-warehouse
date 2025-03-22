@@ -9,18 +9,36 @@ gameplay
 - can only place boxes on shelves?
 
 - DEATH STRANDING:
-	- speed based distance
-	- tsp solving
+	- speed-based distance - increased range/speed = you get to deliver to more places
+	- tsp solving?
 	- more stuff = more unstable (in bl, slower? more noticable/noise generating)
 	- delivering to distance post = unlocks farther deliveries
 
 - SLENDERMAN
 - ROGUELITE
+- BLOCKLAND
+	- Building structures/Placeable camps?
+	- Multi-run-based approach, prepping the route to be run?
+	- Multiple ways to approach the core delivery aspect
+		- Specialized deliveries vs bulk
+		- Prepping the route for stealth, endurance, or speed via building
+		- 
 
 equipment
 - backpack of crates to increase inventory size
 - caffeine pills - speed boost
 
+
+
+
+
+
+open play delivery:
+- deliver to various spots in the gamespace
+- not necessarily easy to get to, requires building
+- not meeting quota = passive mobs become hostile
+- combat relegated to moving/killing mobs in the way or coming after your packages
+- drones periodically try to wreck your structure
 
 
 
@@ -59,3 +77,16 @@ weapons (with durability)
 	- auto rifle
 	- pump shotty
 */
+
+
+/*
+finalized design elements:
+- open world, with sparsely generated structures
+- pve-focus, since package delivery sim isn't inherently interesting enough
+	- pve-focus still allows package-structure-buliding as a mechanic
+- destinations request packages, which are provided at delivery locations
+- biomes centered on the destination
+- package weight affects sprint only
+
+equipment:
+- clipboard - record the contents of a notice
