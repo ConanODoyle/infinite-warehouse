@@ -71,7 +71,6 @@ datablock fxDtsBrickData(brickWarehousePillarUnitData)
 	uiName = "warehouse_pillar_unit";
 };
 
-
 datablock fxDtsBrickData(brickWarehouseCeilingUnitData)
 {
 	brickFile = "./warehouse_ceiling_unit.blb";
@@ -80,13 +79,28 @@ datablock fxDtsBrickData(brickWarehouseCeilingUnitData)
 	uiName = "warehouse_ceiling_unit";
 };
 
-
 datablock fxDtsBrickData(brickWarehouseCeilingUnitShortData)
 {
 	brickFile = "./warehouse_ceiling_unit_short.blb";
 	category = "Factory";
 	subCategory = "Warehouse";
 	uiName = "warehouse_ceiling_unit_short";
+};
+
+datablock fxDtsBrickData(brickWarehouseWallBasicData)
+{
+	brickFile = "./warehouse_wall_basic.blb";
+	category = "Factory";
+	subCategory = "Warehouse";
+	uiName = "warehouse_wall_basic";
+};
+
+datablock fxDtsBrickData(brickWarehouseWallTopperData)
+{
+	brickFile = "./warehouse_wall_topper.blb";
+	category = "Factory";
+	subCategory = "Warehouse";
+	uiName = "warehouse_wall_topper";
 };
 
 
