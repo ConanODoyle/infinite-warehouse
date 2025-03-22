@@ -292,14 +292,28 @@ function PackageImage::onLoop(%this, %obj, %slot)
 	%norm = getWords(%ray, 4, 6);
 	if (vectorDist(%norm, "0 0 -1") < 0.01)
 	{
-		%shift = -0.1;
+		if (%brick.dataBlock.brickSizeZ % 2)
+		{
+			%shift = -0.2 * mFloor(%brick.dataBlock.brickSizeZ / 2);
+		}
+		else
+		{
+			%shift = -0.2 * mCeil(%brick.dataBlock.brickSizeZ / 2);
+		}
 	}
-	else
+	else if (vectorDist(%norm, "0 0 1") < 0.01)
 	{
-		%shift = 0.1;
+		if (%brick.dataBlock.brickSizeZ % 2)
+		{
+			%shift = 0.2 * mCeil(%brick.dataBlock.brickSizeZ / 2);
+		}
+		else
+		{
+			%shift = 0.2 * mCeil(%brick.dataBlock.brickSizeZ / 2);
+		}
 	}
 
-	%pos = vectorAdd(%pos, "0 0 " SPC (%this.brick.brickSizeZ * %shift));
+	%pos = vectorAdd(%pos, "0 0 " SPC %shift);
 
 	if (vectorDist(%brick.getTransform(), %pos) >= 0.1)
 	{

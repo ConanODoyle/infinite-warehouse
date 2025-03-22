@@ -36,8 +36,14 @@ function roundPositionToBrickGrid(%pos, %brickDimensions, %angleID)
 		%y -= 0.25;
 	}
 
-	//%z needs to be rounded to nearest 0.1
-	%z = mFloor(%z * 10 + 0.5) / 10;
+	//%z needs to be rounded to nearest 0.1 or 0.2
+	if (getWord(%brickDimensions, 2) % 2) { //odd height
+		%z = (mFloor(%z * 5 + 0.5) / 5) - 0.1; 
+	}
+	else
+	{
+		%z = (mFloor(%z * 5 + 0.5) / 5); //even height
+	}
 
 	return %x SPC %y SPC %z;
 }
