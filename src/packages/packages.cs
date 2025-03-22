@@ -272,6 +272,7 @@ function PackageImage::onLoop(%this, %obj, %slot)
 		return;
 	}
 
+	%hit = getWord(%ray, 0);
 	%pos = getWords(%ray, 1, 3);
 	if (!isObject(%obj.packageTempBrick))
 	{
@@ -356,4 +357,9 @@ function PackageImage::onFire(%this, %obj, %slot)
 	%obj.tool[%obj.currTool] = 0;
 	messageClient(%obj.client, 'MsgItemPickup', "", %obj.currTool, 0);
 	%obj.unmountImage(%slot);
+
+	for (%i = 0; %i < %brick.getNumDownBricks(); %i++)
+	{
+		%brick.getDownBrick(0).onPackagePlaced(%brick, %obj);
+	}
 }
