@@ -15,10 +15,10 @@ package WarehousePackagesPackage
 	{
 		if (%obj.dataBlock.isPackageBrick && isObject(%obj.dataBlock.item) && %obj.getName() $= "")
 		{
-			%slot = getWord(%player.getFreeInventorySlots(), 0);
+			%slot = getWord(%player.getFreePackageSlots(%obj), 0);
 			if (%obj.willCauseChainKill())
 			{
-				%player.client.centerprint("Can't pick up this box!", 3);
+				%player.client.centerprint("Can't pick up this box! It's supporting other bricks!", 3);
 			}
 			else if (%slot !$= "")
 			{
@@ -89,6 +89,40 @@ function loadBoxTextures()
 }
 loadBoxTextures();
 
+function Player::getFreePackageSlots(%this, %packageBrick)
+{	
+	%partialSlots = "";
+	%emptySlots = "";
+	%packageType = %packageBrick.getPackageType();
+	
+	//two lists, first to find partially filled slots, second to find empty slots
+	//prioritize first list
+	for(%i = 0; %i < %this.getDataBlock().maxTools ; %i++)
+	{
+		if(isObject(%this.tool[%i]) 
+			&& %this.tool[%i].image.brick $= %packageBrick.dataBlock 
+			&& %this.packageType[%i] $= %packageType 
+			&& %this.toolPackageCount[%i] < %this.getMaxPackagesPerSlot(%packageBrick.dataBlock.item))
+		{
+			%count++;
+			%partialSlots = %partialSlots SPC %i;
+		}
+	
+		if(!isObject(%this.tool[%i]))
+		{
+			%count++;
+			%emptySlots = %emptySlots SPC %i;
+		}
+	}
+	
+	return trim(trim(%partialSlots) SPC trim(%emptySlots));
+}
+
+function Player::getMaxPackagesPerSlot(%this, %packageItem)
+{
+	return %packageItem.maxPackagesPerSlot;
+}
+
 function pickupPackage(%obj, %player, %slot)
 {
 	messageClient(%player.client, 'MsgItemPickup', "", %slot, %obj.dataBlock.item.getID());
@@ -99,7 +133,8 @@ function pickupPackage(%obj, %player, %slot)
 		%type = "base";
 	}
 	%player.packageType[%slot] = %type;
-	serverCmdUseTool(%player.client, %slot);
+	%player.toolPackageCount[%slot]++;
+	// serverCmdUseTool(%player.client, %slot);
 	%obj.delete();
 }
 
@@ -132,6 +167,7 @@ datablock ItemData(Package3x3Item : HammerItem)
 	colorShiftColor = "0.521569 0.384314 0.219608 1.000000";
 
 	isPackageItem = 1;
+	maxPackagesPerSlot = 3;
 	canDrop = 0;
 };
 
@@ -147,6 +183,7 @@ datablock ItemData(Package2x3Item : HammerItem)
 	colorShiftColor = "0.521569 0.384314 0.219608 1.000000";
 
 	isPackageItem = 1;
+	maxPackagesPerSlot = 5;
 	canDrop = 0;
 };
 
@@ -162,6 +199,7 @@ datablock ItemData(Package2x2Item : HammerItem)
 	colorShiftColor = "0.521569 0.384314 0.219608 1.000000";
 
 	isPackageItem = 1;
+	maxPackagesPerSlot = 8;
 	canDrop = 0;
 };
 
@@ -247,6 +285,7 @@ function PackageImage::onMount(%this, %obj, %slot)
 		%obj.packageTempBrick.delete();
 	}
 	%obj.playThread(1, "armReadyBoth");
+	centerprintPackageCount(%this, %obj, %slot);
 }
 
 function PackageImage::onUnmount(%this, %obj, %slot)
@@ -255,12 +294,14 @@ function PackageImage::onUnmount(%this, %obj, %slot)
 	{
 		%obj.packageTempBrick.delete();
 	}
+	%obj.client.centerprint("", 1);
 }
 
 function PackageImage::onLoop(%this, %obj, %slot)
 {
 	%start = %obj.getEyeTransform();
 	%end = vectorAdd(%start, vectorScale(%obj.getEyeVector(), 5));
+	centerprintPackageCount(%this, %obj, %slot);
 
 	%ray = containerRaycast(%start, %end, $Typemasks::fxBrickObjectType | $Typemasks::StaticObjectType);
 	if (!%ray)
@@ -280,9 +321,7 @@ function PackageImage::onLoop(%this, %obj, %slot)
 		{
 			dataBlock = %this.brick;
 		};
-		//TODO: set the ghost print
-		// %obj.packageTempBrick.setPrint($printNameTable["Warehouse/base.box"]);
-		%obj.packageTempBrick.setPrint($printNameTable["Warehouse/" @ %obj.packageType[%obj.currtool] @ ".box"]);
+		%obj.packageTempBrick.setPrint($printNameTable["Warehouse/" @ %obj.packageType[%obj.currTool] @ ".box"]);
 		%obj.packageTempBrick.setColor($DefaultPackageColor);
 	}
 	%brick = %obj.packageTempBrick;
@@ -302,7 +341,7 @@ function PackageImage::onLoop(%this, %obj, %slot)
 			%shift = -0.2 * mCeil(%brick.dataBlock.brickSizeZ / 2);
 		}
 	}
-	else if (vectorDist(%norm, "0 0 1") < 0.01)
+	else
 	{
 		if (%brick.dataBlock.brickSizeZ % 2)
 		{
@@ -354,12 +393,31 @@ function PackageImage::onFire(%this, %obj, %slot)
 	serverPlay3d("brickPlantSound", %brick.position);
 
 	%obj.packageTempBrick = "";
-	%obj.tool[%obj.currTool] = 0;
-	messageClient(%obj.client, 'MsgItemPickup', "", %obj.currTool, 0);
-	%obj.unmountImage(%slot);
+
+	%obj.toolPackageCount[%obj.currTool]--;
+	centerprintPackageCount(%this, %obj, %slot);
+
+	if (%obj.toolPackageCount[%obj.currTool] <= 0)
+	{
+		%obj.tool[%obj.currTool] = 0;
+		messageClient(%obj.client, 'MsgItemPickup', "", %obj.currTool, 0);
+		%obj.unmountImage(%slot);
+		%obj.toolPackageCount[%obj.currTool] = "";
+		%obj.packageType[%obj.currTool] = "";
+	}
 
 	for (%i = 0; %i < %brick.getNumDownBricks(); %i++)
 	{
 		%brick.getDownBrick(0).onPackagePlaced(%brick, %obj);
 	}
+}
+
+function centerprintPackageCount(%this, %obj, %slot)
+{
+	%size = %obj.tool[%obj.currTool].uiName;
+	%type = %obj.packageType[%obj.currTool];
+	%max = %obj.getMaxPackagesPerSlot(%this.item);
+	%count = %obj.toolPackageCount[%obj.currTool] + 0;
+	%countColor = (%max == %count ? "\c3" : "\c0");
+	%obj.client.centerprint("\n\n\n\n\n\c6[\c5" @ %type @ "\c6] \c3" @ %size @ ": " @ %count @ "/" @ %max @ " ", 5);
 }
