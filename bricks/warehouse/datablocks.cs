@@ -201,3 +201,11 @@ datablock fxDtsBrickData(brickPalletData)
 	subCategory = "Packages";
 	uiName = "pallet";
 };
+
+datablock fxDtsBrickData(brickPalletsVerticalData)
+{
+	brickFile = "./pallets_vertical.blb";
+	category = "Factory";
+	subCategory = "Packages";
+	uiName = "pallets_vertical";
+};
