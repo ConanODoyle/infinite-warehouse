@@ -169,3 +169,35 @@ datablock fxDtsBrickData(brick2x2PackageData)
 	hasPrint = 1;
 	printAspectRatio = "Warehouse";
 };
+
+datablock fxDtsBrickData(brickShippingBoxPalletData)
+{
+	brickFile = "./shippingbox_pallet.blb";
+	category = "Factory";
+	subCategory = "Packages";
+	uiName = "shippingbox_pallet";
+};
+
+datablock fxDtsBrickData(brickShippingBoxData)
+{
+	brickFile = "./shippingbox.blb";
+	category = "Factory";
+	subCategory = "Packages";
+	uiName = "shippingbox";
+};
+
+datablock fxDtsBrickData(brickShippingBoxOpenData)
+{
+	brickFile = "./shippingbox_open.blb";
+	category = "Factory";
+	subCategory = "Packages";
+	uiName = "shippingbox_open";
+};
+
+datablock fxDtsBrickData(brickPalletData)
+{
+	brickFile = "./pallet.blb";
+	category = "Factory";
+	subCategory = "Packages";
+	uiName = "pallet";
+};

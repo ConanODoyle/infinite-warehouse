@@ -1,0 +1,288 @@
+6 6 13
+SPECIAL
+
+uuuuuu
+xxxxxx
+xxxxxx
+xxxxxx
+xxxxxx
+xxxxxx
+xxxxxx
+xxxxxx
+xxxxxx
+xxxxxx
+xxxxxx
+xxxxxx
+dddddd
+
+uuuuuu
+xxxxxx
+xxxxxx
+xxxxxx
+xxxxxx
+xxxxxx
+xxxxxx
+xxxxxx
+xxxxxx
+xxxxxx
+xxxxxx
+xxxxxx
+dddddd
+
+uuuuuu
+xxxxxx
+xxxxxx
+xxxxxx
+xxxxxx
+xxxxxx
+xxxxxx
+xxxxxx
+xxxxxx
+xxxxxx
+xxxxxx
+xxxxxx
+dddddd
+
+uuuuuu
+xxxxxx
+xxxxxx
+xxxxxx
+xxxxxx
+xxxxxx
+xxxxxx
+xxxxxx
+xxxxxx
+xxxxxx
+xxxxxx
+xxxxxx
+dddddd
+
+uuuuuu
+xxxxxx
+xxxxxx
+xxxxxx
+xxxxxx
+xxxxxx
+xxxxxx
+xxxxxx
+xxxxxx
+xxxxxx
+xxxxxx
+xxxxxx
+dddddd
+
+uuuuuu
+xxxxxx
+xxxxxx
+xxxxxx
+xxxxxx
+xxxxxx
+xxxxxx
+xxxxxx
+xxxxxx
+xxxxxx
+xxxxxx
+xxxxxx
+dddddd
+
+1
+
+0 0 0
+6 6 13
+COVERAGE:
+0 : 99999
+0 : 99999
+0 : 99999
+0 : 99999
+0 : 99999
+0 : 99999
+---------------- TOP QUADS ----------------
+2
+
+TEX:TOP
+POSITION:
+-3 0 6.5
+-3 3 6.5
+3 3 6.5
+3 0 6.5
+UV COORDS:
+0.76105 0.2287
+0.76105 0.7713
+0.23895 0.7713
+0.23895 0.2287
+COLORS:
+0.58304 0.47245 0.3397 1
+0.58304 0.47245 0.3397 1
+0.58304 0.47245 0.3397 1
+0.58304 0.47245 0.3397 1
+NORMALS:
+0 0 1
+0 0 1
+0 0 1
+0 0 1
+
+TEX:TOP
+POSITION:
+-3 -3 6.5
+-3 0 6.5
+3 0 6.5
+3 -3 6.5
+UV COORDS:
+0.76105 0.2287
+0.76105 0.7713
+0.23895 0.7713
+0.23895 0.2287
+COLORS:
+0.58304 0.47245 0.3397 1
+0.58304 0.47245 0.3397 1
+0.58304 0.47245 0.3397 1
+0.58304 0.47245 0.3397 1
+NORMALS:
+0 0 1
+0 0 1
+0 0 1
+0 0 1
+---------------- BOTTOM QUADS ----------------
+2
+
+TEX:TOP
+POSITION:
+3 3 -6.5
+-3 3 -6.5
+-3 0 -6.5
+3 0 -6.5
+UV COORDS:
+0.23895 0.7713
+0.76105 0.7713
+0.76105 0.2287
+0.23895 0.2287
+COLORS:
+0.58304 0.47245 0.3397 1
+0.58304 0.47245 0.3397 1
+0.58304 0.47245 0.3397 1
+0.58304 0.47245 0.3397 1
+NORMALS:
+0 0 -1
+0 0 -1
+0 0 -1
+0 0 -1
+
+TEX:TOP
+POSITION:
+3 0 -6.5
+-3 0 -6.5
+-3 -3 -6.5
+3 -3 -6.5
+UV COORDS:
+0.23895 0.7713
+0.76105 0.7713
+0.76105 0.2287
+0.23895 0.2287
+COLORS:
+0.58304 0.47245 0.3397 1
+0.58304 0.47245 0.3397 1
+0.58304 0.47245 0.3397 1
+0.58304 0.47245 0.3397 1
+NORMALS:
+0 0 -1
+0 0 -1
+0 0 -1
+0 0 -1
+---------------- NORTH QUADS ----------------
+1
+
+TEX:SIDE
+POSITION:
+3 3 -6.5
+3 3 6.5
+-3 3 6.5
+-3 3 -6.5
+UV COORDS:
+-0 1
+0 0
+1 0
+1 1
+COLORS:
+0.58304 0.47245 0.3397 1
+0.58304 0.47245 0.3397 1
+0.58304 0.47245 0.3397 1
+0.58304 0.47245 0.3397 1
+NORMALS:
+0 1 0
+0 1 0
+0 1 0
+0 1 0
+---------------- EAST QUADS ----------------
+1
+
+TEX:SIDE
+POSITION:
+3 -3 -6.5
+3 -3 6.5
+3 3 6.5
+3 3 -6.5
+UV COORDS:
+-0 1
+0 0
+1 0
+1 1
+COLORS:
+0.58304 0.47245 0.3397 1
+0.58304 0.47245 0.3397 1
+0.58304 0.47245 0.3397 1
+0.58304 0.47245 0.3397 1
+NORMALS:
+1 0 0
+1 0 0
+1 0 0
+1 0 0
+---------------- SOUTH QUADS ----------------
+1
+
+TEX:SIDE
+POSITION:
+-3 -3 -6.5
+-3 -3 6.5
+3 -3 6.5
+3 -3 -6.5
+UV COORDS:
+-0 1
+0 0
+1 0
+1 1
+COLORS:
+0.58304 0.47245 0.3397 1
+0.58304 0.47245 0.3397 1
+0.58304 0.47245 0.3397 1
+0.58304 0.47245 0.3397 1
+NORMALS:
+0 -1 0
+0 -1 0
+0 -1 0
+0 -1 0
+---------------- WEST QUADS ----------------
+1
+
+TEX:SIDE
+POSITION:
+-3 3 -6.5
+-3 3 6.5
+-3 -3 6.5
+-3 -3 -6.5
+UV COORDS:
+-0 1
+0 0
+1 0
+1 1
+COLORS:
+0.58304 0.47245 0.3397 1
+0.58304 0.47245 0.3397 1
+0.58304 0.47245 0.3397 1
+0.58304 0.47245 0.3397 1
+NORMALS:
+-1 0 0
+-1 0 0
+-1 0 0
+-1 0 0
+---------------- OMNI QUADS ----------------
+0
