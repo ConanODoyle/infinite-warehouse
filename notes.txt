@@ -90,3 +90,15 @@ finalized design elements:
 
 equipment:
 - clipboard - record the contents of a notice
+
+
+
+enemies:
+- tallhead - wanders a bit, stands still - when looking at player you need to look back until they look away again or else they start approaching
+	- longer you dont look the faster they get
+	- scream when fully aggroed and point of no return, attracts other ones
+	- attacks like zombies
+- drones
+- box mimics
+- forklifts
+	- disguise by looking like other forklifts (normally bricks)
