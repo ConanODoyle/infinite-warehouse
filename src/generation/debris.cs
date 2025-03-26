@@ -22,8 +22,15 @@ function generateDebrisStacks(%position, %brickDatablocks, %heights, %totalTower
 		}
 
 	%nextPosition = %position;
-	for (%i = 0; %i < %totalTowers; %i++)
+	for (%i = 1; %i <= %totalTowers; %i++)
 	{
+		//repeatedly reset position to have more clustering around start
+		//only reset position if last placed location was valid, otherwise we're getting rid of the cumulative nudge
+		if (%i % mFloor(%totalTowers / 6) == 0 && isObject(%brick))
+		{
+			%nextPosition = %position;
+		}
+
 		%randomStartRotation = getRandom(0, 3);
 		%randomIdx = getRandom(0, %fieldCount - 1);
 		%randomBrickDatablock = %brick[%randomIdx];
@@ -125,23 +132,32 @@ function nudgePosition(%position, %maxRange)
 	return vectorAdd(%position, getRandom(-1 * %min, %min) SPC getRandom(-1 * %min, %min));
 }
 
-$shelf = "brickWarehouseShelfUnitData 55";
+$shelf1 = "brickWarehouseShelfUnitData 55";
+$shelf2 = "brickWarehouseShelfUnitData 56";
 $shelfSide = "brickWarehouseShelfSideData 55";
+
+$shippingBoxPallet = "brickShippingBoxPalletData 56  2";
+$shippingBox = "brickShippingBoxData 56  2";
+$pallets = "brickPalletsVerticalData 56  2";
+$cube8 = "brick8xCubeData 56  2";
 
 $shelfScat = "brickWarehouseShelfUnitData 55  2";
 $shelfSideScat = "brickWarehouseShelfSideData 55  2";
-$box = "brick3x3PackageData 0 Warehouse/base.box 4";
+$box = "brick3x3PackageData 0 Warehouse/base.box 8";
 $medBox = "brick2x3PackageData 0 Warehouse/base.box 8";
-$smallBox = "brick2x2PackageData 0 Warehouse/base.box 10";
+$smallBox = "brick2x2PackageData 0 Warehouse/base.box 8";
 
-$blockers = trim($shelf TAB $shelf TAB $shelf TAB $shelf TAB $shelf TAB $shelf TAB $shelfSide TAB $shelfSide);
-$scattered = trim($box TAB $medBox TAB $smallBox TAB $smallBox TAB $shelfScat TAB $shelfSideScat);
+$boxblockers = trim($shippingBoxPallet TAB $shippingBoxPallet TAB $shippingBoxPallet TAB $shippingBox TAB $shippingBox TAB $pallets);
+$blockers = trim($shelf1 TAB $shelf1 TAB $shelf1 TAB $shelf1 TAB $shelf2 TAB $shippingBoxPallet TAB $shelfSide TAB $shelfSide);
+$scattered = trim($box TAB $medBox TAB $smallBox TAB $smallBox TAB $shelfScat TAB $shelfSideScat TAB $shippingBoxPallet);
 
 
-function testGen(%hitloc)
+function testGen(%hitloc, %factor, %clear)
 {
 	exec("add-ons/server_factory/src/generation/debris.cs");
-	$DebrisSimSet.deleteAll();
-	generateDebrisStacks(%hitloc, $blockers, "4 4 5 5 6", 200);
-	generateDebrisStacks(%hitloc, $scattered, "1 1 1 2 2 3", 100);
+	if (%clear) $DebrisSimSet.deleteAll();
+	if (%factor <= 0.1) %factor = 1;
+	generateDebrisStacks(%hitloc, $boxblockers, "2 3 3 4 4 4", 50 * %factor);
+	generateDebrisStacks(%hitloc, $blockers, "4 4 5 5 6", 100 * %factor);
+	generateDebrisStacks(%hitloc, $scattered, "1 1 1 2 2 3", 50 * %factor);
 }
