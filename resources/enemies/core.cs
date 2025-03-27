@@ -2,7 +2,7 @@
 //
 //%bot.thinkFunction = function to call for thinking, with the sole param %bot
 //	Always called before actFunction
-//	Intended for targeting, logic behavior - can contain action if logic is simple
+//	Intended for targeting, logic behavior - can contain necessary action if logic is simple
 //
 //%bot.actFunction = function to call for action, with the sole param %bot
 //	Always called after thinkFunction
@@ -17,6 +17,19 @@ if (!isObject($BotSimSet))
 	$BotSimSet = new SimSet();
 }
 $BotsPerLoop = 16;
+
+package AICore_Callbacks
+{
+	function Armor::damage(%db, %obj, %sourceObj, %pos, %damage, %damageType)
+	{
+		if (isFunction(%obj.damageFunction))
+		{
+			damageBot(%obj, %damage, %sourceObj);
+		}
+		return parent::damage(%db, %obj, %sourceObj, %pos, %damage, %damageType);
+	}
+};
+schedule(1000, 0, activatePackage, AICore_Callbacks); //top level package to get raw unmodified damage
 
 function botLoop(%index)
 {
@@ -77,4 +90,22 @@ function stopAllBotActions(%bot)
 	%bot.setImageTrigger(1, 0);
 	%bot.setImageTrigger(2, 0);
 	%bot.setImageTrigger(3, 0);
+}
+
+
+//callbacks for other scripts and AI state machines to hook onto/use
+function alertBot(%bot, %alertString)
+{
+	if (isFunction(%bot.alertFunction))
+	{
+		call(%bot.alertFunction, %bot, %alertString);
+	}
+}
+
+function damageBot(%bot, %damage, %sourceObject)
+{
+	if (isFunction(%bot.damageFunction))
+	{
+		return call(%bot.damageFunction, %bot, %damage, %sourceObject);
+	}
 }
