@@ -71,12 +71,12 @@ function botLoop(%index)
 
 function canBotThink(%bot) //function to package if overriding
 {
-	return %bot.nextThinkTime < $Sim::Time;
+	return %bot.nextThinkTime < getSimTime();
 }
 
 function canBotAct(%bot) //function to package if overriding
 {
-	return !%bot.nextAct < $Sim::Time;
+	return !%bot.nextAct < getSimTime();
 }
 
 function stopAllBotActions(%bot)
