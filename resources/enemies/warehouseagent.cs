@@ -1,3 +1,5 @@
+$WHA::PassiveActivateRadius = 5;
+
 datablock ShapeBaseImageData(LargeHeadImage)
 {
 	shapeFile = "./largehead.dts";
@@ -38,9 +40,9 @@ datablock PlayerData(AgentBotArmor : PlayerStandardArmor)
 
 	airControl = 0.8;
 	
-	maxForwardSpeed = 7;
-	maxBackwardSpeed = 4;
-	maxSideSpeed = 6;
+	maxForwardSpeed = 6.5;
+	maxBackwardSpeed = 3.5;
+	maxSideSpeed = 3;
 	
 	maxForwardCrouchSpeed = 3;
 	maxBackwardCrouchSpeed = 2;
@@ -56,8 +58,8 @@ function WarehouseAgentBot()
 	%bot = new AIPlayer()
 	{
 		dataBlock = "PlayerStandardArmor";
-		yawSpeed = 2;
-		pitchSpeed = 2;
+		yawSpeed = 10;
+		pitchSpeed = 10;
 	};
 	%bot.hideNode("HeadSkin");
 	%bot.hideNode("lHand");
@@ -67,5 +69,42 @@ function WarehouseAgentBot()
 	%bot.mountImage(LargeHandLImage, 1);
 	%bot.mountImage(LargeHeadImage, 2);
 
+	%bot.setScale("1.2 1.2 1.2");
+
 	return %bot;
+}
+
+function spawnWarehouseAgentBot(%position)
+{
+	%bot = WarehouseAgentBot();
+	$BotSimSet.add(%bot);
+
+	%bot.thinkFunction = "WarehouseAgent_PassiveThink";
+	%bot.alertFunction = "WarehouseAgent_Alert";
+	%bot.actFunction = "";
+}
+
+function WarehouseAgent_PassiveThink(%bot)
+{
+	%bot.nextThinkTime = getSimTime() + 4000;
+
+	if (!%bot.lastLookVector)
+	{
+		%bot.lastLookVector = getRandomUnitSpherePoint();
+		%bot.setAimVector(%bot.lastLookVector);
+	}
+	//10 stud radius search
+	initContainerRadiusSearch(%bot.position, $WHA::PassiveActivateRadius, $Typemasks::PlayerObjectType);
+	for (%next = containerSearchNext())
+	{
+		if (%next.getClassName() $= "Player" && vectorDist(%bot.position, %next.position) < $WHA::PassiveActivateRadius)
+		{
+			%bot.thinkFunction = "WarehouseAgent_ActiveThink";
+		}
+	}
+}
+
+function WarehouseAgent_ActiveThink(%bot)
+{
+
 }

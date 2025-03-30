@@ -7,3 +7,8 @@ function getRandomUnitSpherePoint()
 	%z = mCos(%randZ);
 	return = %x SPC %y SPC %z;
 }
+
+function getVectorAngle(%vec1, %vec2)
+{
+   return mACos(vectorDot(%vec1, %vec2));
+}
